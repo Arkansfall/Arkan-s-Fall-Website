@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+ font-family: 'New Rocker', cursive;
+color: white;
+text-shadow: 1px 1px 10px black,
+            2px 2px 8px black,
+            3px 3px 6px black,
+            4px 4px 4px black,
+            5px 5px 2px black,
+            6px 6px 1px black;
+
+
+}
+
+header {
+  background-color: rgba(68, 85, 99);
+
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+padding-bottom: 20px;
+overflow-x: auto;
+}
+
+header h1 {
+
+  text-align: left;
+  display: inline;
+}
+
+header h1 img{
+ height: 35px;
+width:35px;
+}
+
+header p {
+  text-align: center;
+  display: inline;
+ margin-left: 17px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav ul button {
+
+padding: 2px 3px;
+  background-color: rgba(220, 50, 50, 0.5);
+font-weight: bold;
+
+ 
+}
+
+#subTitle ul button {
+padding: 2px 3px;
+font-weight: bold;
+  background-color: rgba(220, 50, 50,0.5); 
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+#home{
+  text-align: center;
+  font-size: 36px;
+  overflow: hidden;
+  position: relative;
+display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#home p{
+display: inline-block;
+
+  padding: 10px;
+}
+
+
+main {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  width: 87%;
+  height: calc(100vh - 40px); /* adjust the height to fit the content */
+  margin: 0 auto; /* center the element horizontally */
+  overflow: hidden;
+  text-align: center;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+
+  background-color: rgba(0, 0, 0, 0);
+border: 3.5px solid black;
+  width: 90%;
+  height: 90%;
+z-index: 0;
+}
+
+
+
+}
+
+header::-webkit-scrollbar {
+  height: 5px;
+}
+header::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+header {
+border: 1px solid black;
+}
+
+
+#about {
+  width: 85%;
+  padding: 20px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; /* center the element horizontally */
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#about ph {
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#about p {
+  font-size: 19px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+
+#about img {
+  width: 98%;
+  height: auto;
+border: 3.5px solid black;
+}
+
+
+
+#team {
+
+  width: 85%;
+  padding: 20px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; /* center the element horizontally */
+}
+
+#louwtjie {
+
+display: inline-block;
+	background-color: RGB(150, 0, 0, 0.6) ;;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid black;
+	overflow: hidden;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#louwtjie a{
+	float: right;
+}
+
+#louwtjie b{
+	float: right;
+ margin-right: 10px;
+}
+
+#vince {
+
+display: inline-block;
+	background-color: RGB(150, 0, 0, 0.6) ;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid black;
+	overflow: hidden;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#vince a{
+	float: right;
+}
+
+#team h{
+float: left;
+
+	padding-right: 10px;
+
+}
+
+.team-container img {
+ 
+  width: 98%;
+  height: auto;
+border: 3.5px solid black;
+}
+
+#ambia {
+	background-color: rgb(150, 0, 0, 0.6);
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid black;
+	overflow: hidden;
+padding-top: 10px;
+padding-bottom: 10px;
+display: inline-block;
+margin: 0 auto;
+
+  text-align: center;
+}
+
+#ambia h{
+
+  font-size: 24px;
+}
+
+#ambia a{
+	float: right;
+padding: 1px;
+}
+
+#ambia d{
+	padding-left: 10px;
+
+display: flex;
+}
+
+
+
+#ambia b img{
+	float: left;
+  display: block;
+  margin: 0 auto;
+  max-width:10%;
+
+}
+
+#ambia c{
+	padding: 5px;
+ min-width: 100%;
+  max-width: 100%;
+display: inline-block;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+padding-top: 10px;
+padding-bottom: 10px;
+
+  text-align: left;
+}
+
+footer {
+border: 1px solid black;
+  background-color: rgba(68, 85, 99);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 1;
+font-weight: bold;
+}
+
+.foot-image {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+  z-index: 2;
+  background-position: bottom;
+}
+
+footer p{
+  position: relative;
+  z-index: 3;
+}
