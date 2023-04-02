@@ -193,10 +193,17 @@ border: 1px solid black;
 
 
 
-#about img {
-  width: 98%;
-  height: auto;
-border: 3.5px solid black;
+
+.about-container {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.about-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
