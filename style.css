@@ -215,7 +215,7 @@ border: 3.5px solid black;
 #louwtjie {
 
 display: inline-block;
-	background-color: RGB(150, 0, 0, 0.6) ;;
+	background-color: RGB(150, 0, 0, 0.6) ;
 	position: relative;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -348,6 +348,7 @@ font-weight: bold;
 
 footer a{
   float: right;
+  background-color: RGB(150, 0, 0, 0.6)
 }
 
 footer p{
