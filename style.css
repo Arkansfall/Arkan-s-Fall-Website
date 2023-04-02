@@ -345,12 +345,6 @@ font-weight: bold;
   background-position: bottom;
 }
 
-
-footer a{
-  float: right;
-  background-color: RGB(150, 0, 0, 0.6);
-}
-
 footer p{
   position: relative;
   z-index: 3;
