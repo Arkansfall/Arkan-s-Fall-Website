@@ -328,11 +328,15 @@ border: 1px solid black;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   font-size: 14px;
   z-index: 1;
 font-weight: bold;
+}
+
+.foot a{
+  float: right;
 }
 
 .foot-image {
