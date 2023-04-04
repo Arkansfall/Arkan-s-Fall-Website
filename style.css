@@ -11,6 +11,7 @@ body background-image img{
 }
 
 header {
+    backdrop-filter: blur(5px);
     background-color: rgb(65, 86, 101, 0.80);
     color: #fff;
     padding: 10px;
@@ -299,7 +300,8 @@ header {
         text-align: left;
     }
 
-footer {
+footer {    
+    backdrop-filter: blur(5px);
     border: 1px solid black;
     background-color: rgb(65, 86, 101, 0.80);
     position: fixed;
