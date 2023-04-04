@@ -1,114 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <link rel="icon" href="https://media.discordapp.net/attachments/778591403340595223/1091023472580362260/logo.png?width=910&height=910" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <title>Arkan's Fall</title>
     <style>
-      body {
-        background-image: url('https://media.discordapp.net/attachments/930850918855999578/1091089564862517258/Fotor_AI_6.png?width=682&height=910');
-        background-repeat: repeat-y; /* This will repeat the image horizontally */
-        background-height: 100%;
- background-size: cover;
-        background-position: center;
-background-attachment: fixed;
-      }
+        body {
+            position: relative;
+            height: 100%; /* add this to ensure full viewport height */
+        }
+
+            body::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url('https://media.discordapp.net/attachments/930850918855999578/1091089564862517258/Fotor_AI_6.png?width=682&height=910');
+                background-repeat: repeat-y;
+                background-size: cover;
+                background-position: center bottom;
+                background-attachment: fixed;
+                filter: blur(5px);
+                z-index: -2;
+
+            }
+
+            body::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                z-index:-1;
+                background: linear-gradient(rgb(0, 0, 0, 0.9), rgba(0,0,0,0.1));
+            }
     </style>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Arkan's Fall
-<img src="https://media.discordapp.net/attachments/778591403340595223/1091023472580362260/logo.png?width=910&height=910"></h1>
+        <h1>
+            Arkan's Fall
+            <img src="https://media.discordapp.net/attachments/778591403340595223/1091023472580362260/logo.png?width=910&height=910">
+        </h1>
 
-      <section id="subTitle">    
-        <p>Early Access</p>
-        <ul><button id="btnSteam">Download on Steam!</button></ul>
-      </section> 
-      <nav>
-        <ul>
-          <li><button id="btnHome">Home</button></li>
-          <li><button id="btnAbout">About</button></li>
-          <li><button id="btnTeam">Team</button></li>
-        </ul>
-      </nav>
+        <section id="subTitle">
+            <p>Early Access</p>
+            <nav><button id="btnSteam">Download on Steam!</button></nav>
+        </section>
+        <nav>
+            <ul>
+                <li><button id="btnHome">Home</button></li>
+                <li><button id="btnAbout">About</button></li>
+                <li><button id="btnTeam">Team</button></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section id="home"> 
-<p>Team up, Protect, Survive!</p> 
-     </section>
-<p></p>
-      <p></p>
-      <div class="video-container">
-<br>
-        <h2>Early Access Gameplay</h2>
-	<br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jkF3jb8PLwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <section id="about">
-        <h2></h2>
-
-        <ph>Welcome to Arkan</ph><br><br>
-        <div class="about-container">
-	<a><img src="https://media.discordapp.net/attachments/778591403340595223/1090664421665296535/about_banner_2.png?width=950&height=307">
-	<img src="https://media.discordapp.net/attachments/778591403340595223/1090667081676107786/about_banner_3.png?width=950&height=307">
-	<img src="https://media.discordapp.net/attachments/778591403340595223/1090657120329932841/about_banner_1.png?width=950&height=307">
-	</a> 
-	</div>
-	<br>
-	<p>An immersive third and first-person shooter game where you play as an Arkan hero fighting off waves of mutated monsters sent by a mysterious dark force to eradicate the population of Arkan.</p>
-	<p>Your objective is to buy time for civilians and resources to be extracted to safe zones as the world of Arkan falls.</p>
-	<p>With various guns at your disposal, play solo or team up with others in co-op mode to survive as long as possible and get as many kills as you can.</p>
-       
-
-      <section id="team">
-        <br>
-        <h2>Team</h2>
-        The Arkan's Fall project has been created by two people out of a passion for games and experience in the field. <br>
+        <section id="home">
+            <p>Team up, Protect, Survive!</p>
+        </section>
         <p></p>
+        <p></p>
+        <div class="video-container">
+            <br>
+            <h2>Early Access Gameplay</h2>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jkF3jb8PLwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-<section id="louwtjie">
-  <h>Louwtjie - Marketing</h>
-  <a href="https://www.linkedin.com/in/louwrens-louwtjie-punt" target="_blank" style="text-decoration: none;">
-    <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-1464529-1239440.png" alt="LinkedIn" width="20" height="20">
-  </a>
-  <a href="https://twitter.com/louwtjie" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/128/254/254406.png" alt="Twitter" width="18" height="18">
-  </a>
-</section>
+        <section id="about">
+            <h2></h2>
+
+            <ph>Welcome to Arkan</ph><br><br>
+            <div class="about-container">
+                <a>
+                    <img src="https://media.discordapp.net/attachments/778591403340595223/1090664421665296535/about_banner_2.png?width=950&height=307">
+                    <img src="https://media.discordapp.net/attachments/778591403340595223/1090667081676107786/about_banner_3.png?width=950&height=307">
+                    <img src="https://media.discordapp.net/attachments/778591403340595223/1090657120329932841/about_banner_1.png?width=950&height=307">
+                </a>
+            </div>
+            <br>
+            <p>An immersive third and first-person shooter game where you play as an Arkan hero fighting off waves of mutated monsters sent by a mysterious dark force to eradicate the population of Arkan.</p>
+            <p>Your objective is to buy time for civilians and resources to be extracted to safe zones as the world of Arkan falls.</p>
+            <p>With various guns at your disposal, play solo or team up with others in co-op mode to survive as long as possible and get as many kills as you can.</p>
+        </section>
+
+            <section id="team">
+                <br>
+                <h2>Team</h2>
+                The Arkan's Fall project has been created by two people out of a passion for games and experience in the field. <br>
+                <p></p>
+
+                <section id="louwtjie">
+                    <h>Louwtjie - Marketing</h>
+                    <a href="https://www.linkedin.com/in/louwrens-louwtjie-punt" target="_blank" style="text-decoration: none;">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-1464529-1239440.png" alt="LinkedIn" width="20" height="20">
+                    </a>
+                    <a href="https://twitter.com/louwtjie" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/254/254406.png" alt="Twitter" width="18" height="18">
+                    </a>
+                </section>
 
 
-<section id="vince">
-  <h>Vince - Development</h>
-  <a href="https://www.linkedin.com/in/vince-s-a235b294/" target="_blank">
-    <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-1464529-1239440.png" alt="LinkedIn" width="20" height="20">
-  </a>
-</section>
-<br>
-<div class="team-container">
-  <img src="https://www.iconarchive.com/download/i75918/martz90/circle/steam.ico" alt="Steam" width="40" height="40" style="padding-left: 27px;">
-  <img src="https://academyclass.com/wp-content/uploads/2021/10/ACCL-Unreal-Engine-1200x1200.png" alt="UnrealEngine" width="40" height="40" style="padding-right: 10px;">
-	</div>
-		<br><br><br>
-</form>
-</section>
+                <section id="vince">
+                    <h>Vince - Development</h>
+                    <a href="https://www.linkedin.com/in/vince-s-a235b294/" target="_blank">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-1464529-1239440.png" alt="LinkedIn" width="20" height="20">
+                    </a>
+                </section>
+                <br>
+                <div class="team-container">
+                    <img src="https://www.iconarchive.com/download/i75918/martz90/circle/steam.ico" alt="Steam" width="40" height="40" style="padding-left: 27px;">
+                    <img src="https://academyclass.com/wp-content/uploads/2021/10/ACCL-Unreal-Engine-1200x1200.png" alt="UnrealEngine" width="40" height="40" style="padding-right: 10px;">
+                </div>
+                <br><br><br>
+            </section>
     </main>
 
     <footer>
-	  <p>&copy; 2023 Arkan's Fall. All rights reserved.</p>
-	  <p>info@arkansfall.com</p>
-		<a href="https://discord.gg/w5WUXAQGyM" target="_blank" style="text-decoration: none;">
-    		<img src="https://icons-for-free.com/iconfiles/png/512/discord-1324440147782873624.png" alt="Discord" width="20" height="20">
-  		</a>
-  		<a href="https://twitter.com/arkansfall" target="_blank">
-    		<img src="https://cdn-icons-png.flaticon.com/128/254/254406.png" alt="Twitter" width="18" height="18">
-  		</a>
-      <div class="foot-image"></div>
+        <p>&copy; 2023 Arkan's Fall. All rights reserved.</p>
+        <p>info@arkansfall.com</p>
+        <a href="https://discord.gg/w5WUXAQGyM" target="_blank" style="text-decoration: none;">
+            <img src="https://icons-for-free.com/iconfiles/png/512/discord-1324440147782873624.png" alt="Discord" width="20" height="20">
+        </a>
+        <a href="https://twitter.com/arkansfall" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/254/254406.png" alt="Twitter" width="18" height="18">
+        </a>
+        <div class="foot-image"></div>
     </footer>
 
-  </body>
+</body>
 </html>
